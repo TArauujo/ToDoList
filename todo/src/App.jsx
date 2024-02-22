@@ -37,7 +37,7 @@ function App() {
             </div>
             <div>
               <button>Completar</button>
-              <button>x</button>
+              <button>X</button>
             </div>
           </div>
         ))}

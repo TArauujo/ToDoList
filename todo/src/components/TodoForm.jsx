@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 
 const TodoForm = () => {
+
+  const [value, setValue] = useState("")
+  const [category, setCategory] = useState("")
+
   return (
     <div>
         <h2>Criar Tarefa:</h2>

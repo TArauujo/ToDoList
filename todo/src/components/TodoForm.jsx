@@ -6,10 +6,15 @@ const TodoForm = () => {
   const [value, setValue] = useState("")
   const [category, setCategory] = useState("")
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Enviou form!")
+  }
+
   return (
     <div>
         <h2>Criar Tarefa:</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Digite o título"/>
             <select>
                 <option value="">Selecione uma categoria</option>

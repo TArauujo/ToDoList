@@ -37,6 +37,10 @@ function App() {
     }
     ];
     setTodos(newTodos);
+  };
+
+  const removeTodo = (id) => {
+    
   }
 
   

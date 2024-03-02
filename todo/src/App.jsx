@@ -4,6 +4,7 @@ import Todo from './components/Todo';
 
 import './App.css';
 import TodoForm from './components/TodoForm';
+import Search from './components/Search';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -26,6 +27,8 @@ function App() {
       isCompleted: false,
     },
   ]);
+
+  const [search, setSearch] = useState("");
 
   const addTodo = (text, category) => {
 
@@ -58,6 +61,7 @@ function App() {
    return(
      <div className = "app">
       <h1>Lista de Tarefas</h1>
+      <Search />
       <div className="todo-list">
         {todos.map((todo) => (
           <Todo key = {todo.id} todo = {todo} removeTodo = {removeTodo} completeTodo = {completeTodo}/>

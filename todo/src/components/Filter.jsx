@@ -12,14 +12,14 @@ const Filter = () => {
             <option value="Completed">Completas</option>
             <option value="Incomplete">Incompletas</option>
           </select>
-        </div>
+        
       </div>
       <div>
         <p>Ordem alfabética: </p>
         <button>Asc</button>
         <button>Desc</button>
       </div>
-      
+      </div>
     </div>
   )
 }

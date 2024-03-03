@@ -14,6 +14,11 @@ const Filter = () => {
           </select>
         </div>
       </div>
+      <div>
+        <p>Ordem alfabética: </p>
+        <button>Asc</button>
+        <button>Desc</button>
+      </div>
       
     </div>
   )
